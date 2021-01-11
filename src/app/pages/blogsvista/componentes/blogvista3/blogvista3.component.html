@@ -1,0 +1,42 @@
+<app-menu></app-menu>
+<div class="container">
+    <div class="col-12 col-md-12">
+        <img [src]="blogs[0].imgEncabezado" class="img-fluid p-2">
+    </div>
+</div>
+
+<div class="container">
+    <app-scroll-top></app-scroll-top>
+      <div class="row mt-5 mb-5">
+        <div class="col-10">
+            <h1 class=''>{{blogs[0].nombre}}</h1>
+            <p class="text-secondary"><strong>{{blogs[0].fecha}}</strong></p>
+        </div>
+        <div class="col-2 text-right">
+            <!-- <img *ngIf="trabajos[0].imgEmpresa"  [src]="trabajos[0].imgEmpresa" class="p-2 img-fluid p-2"> -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" data-aos="fade-down">
+            <p>{{blogs[0].descripcion}}</p>
+            <p>{{blogs[0].descripcion2}}</p>
+        </div>
+    </div>
+    
+    
+      <div class="embed-responsive embed-responsive-21by9 mb-5 mt-5" data-aos="fade-up">
+        <iframe class="embed-responsive-item" [src]="blogs[0].video" allowfullscreen></iframe>
+      </div>
+      
+      <!-- <div class="row">
+          <div class="col-12 text-center mb-5 mt-3">
+            <div class="containerText">
+                <a href="#" class="text">VER TODOS</a>
+            </div>
+          </div>
+      </div> 
+    <app-trabajo></app-trabajo> -->
+    
+</div>
+<app-footer></app-footer>

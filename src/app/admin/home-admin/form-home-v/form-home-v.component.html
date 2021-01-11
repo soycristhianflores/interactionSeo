@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" >
+                <div class="card-header card-header-danger">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title">Formulario de Slider Horizontal</h5>
+                    </div>                    
+                </div>
+                <div class="card-body">
+                    <form #formHomeV="ngForm" (ngSubmit)="onSaveForm(formHomeV)">
+                        <div class="form-row mb-4">
+                            <div class="col-6">
+                                <!-- Nombre -->
+                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Titulo" [(ngModel)]="form.nombre">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" name="texto1" id="texto1" class="form-control" placeholder="Texto principal" [(ngModel)]="form.texto1">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" name="texto1_2" id="texto1_2" class="form-control" placeholder="Texto secundario" [(ngModel)]="form.texto1_2">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" name="enlace1" id="enlace1" class="form-control" placeholder="Enlace" [(ngModel)]="form.enlace1">
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleFormControlFile1">Imagen De Encabezado</label>
+                                <input type="file" class="form-control-file" id="imagen" name="imagen"   (change)="selectFile($event)">
+                            </div>                             
+                        </div>
+
+                        <!-- Send button -->
+                        <button class="btn btn-success btn-block" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

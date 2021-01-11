@@ -1,0 +1,23 @@
+.imgPremio{
+    width: 80%;
+    height: auto;
+}
+.imgPremioPanama{
+    width: 40%;
+    height: auto;
+}
+.tittlePremios{
+    font-family: gotham-medium;
+    letter-spacing: 5px;
+    color: #222E3B;
+}
+.premios{
+    font-family: gothan-bold;
+    color: #6B737C;
+}
+@media only screen and (max-width: 767px) {
+    .imgPremio{
+        width: 100%;
+        height: auto;
+    }
+}

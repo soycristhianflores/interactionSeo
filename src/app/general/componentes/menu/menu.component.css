@@ -1,0 +1,142 @@
+.navbar-brand img{
+    width: 42%;
+    padding-left: 70px;
+}
+.logoAzul{
+    content:url("../../../../assets/img/logoAzul.png") !important;
+    width: 40%;
+    padding-left: 60px;
+    height: auto;
+}
+.logoBlanco{
+    content:url("../../../../assets/img/logo.png") !important;
+    width: 40%;
+    padding-left: 60px;
+    height: auto;
+}
+.white{
+    color: #ffffff !important;
+}
+.blue{
+    color: #222E3B !important;
+}
+.nav-link{
+    font-size: 1rem;
+}
+a.nav-link:hover{
+    color: #2788BF !important;
+}
+.dropdown-menu {
+    top: 100%;
+    left: -200px !important;
+    z-index: 1000;
+    min-width: 20rem;
+    padding: 1rem 1rem !important;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: rgb(0,0,0, .5) !important;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+::placeholder{
+    color: #ffffff;
+    padding-right: 20px !important;
+} 
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .7rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    background-clip: padding-box;
+    border-bottom: 1px solid #707B80 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control2{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .7rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    background-clip: padding-box;
+    border-bottom: 1px solid #707B80 !important; 
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-custom {
+    color: #fff;
+    background-color: #2788BF;
+    border-color: #2788BF;
+    padding: 10px 30px;
+}
+.label{
+    color: #ffffff;
+    font-size: .8rem;
+}
+#navbarSupportedContent{
+    margin-left: 20%;
+}
+.nofixed{
+    position: inherit;
+}
+.navbar {
+    padding: 1.5rem 0 !important;
+}
+@media only screen and (max-width: 767px) {
+    .navbar-brand img{
+        width: 80%;
+        padding-left: 80px;
+    }
+    .navbar{
+        padding-top: .7rem !important;
+        padding: .5rem .5rem 1rem 1rem !important;
+    }
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+    .nav-item{
+        padding-right: 20px;
+    }
+    #navbarSupportedContent{
+        margin-left: 0%;
+    }
+    .dropdown-menu{
+        top: 5% !important;
+        left: -75% !important;
+        position: relative !important;
+        padding: 1rem 1rem !important;
+        background-color: rgb(0,0,0, .5) !important;
+    }
+    .nofixed{
+        position: inherit;
+    }
+    .fixedHomeMovil{
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 2000px) and (min-width: 1919px)  {
+
+    #navbarSupportedContent{
+        margin-left: 40%;
+    }
+
+    .nav-link{
+        font-size: 1.5rem;
+    }
+}

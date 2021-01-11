@@ -1,0 +1,39 @@
+.container{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+}
+.gridblog{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+.shadowBox{
+    background-color: rgb(56, 57, 59, 0.8);
+    width: 30%;
+    margin-left: 15%;
+    padding: 40px 20px;
+}
+.shadowBox h3{
+    color: #ffffff;
+    font-family: gothan-bold;
+}
+.shadowBox p{
+    color: #ffffff;
+    font-family: gotham-book;
+    font-size: .9rem;
+}
+.shadowBox a{
+    color: #2788BF;
+    font-family: gothan-bold;
+    font-size: .9rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .shadowBox{
+        background-color: rgb(56, 57, 59, 0.8);
+        width: 100%;
+        margin-left: 0%;
+        padding: 40px 20px;
+    }
+}

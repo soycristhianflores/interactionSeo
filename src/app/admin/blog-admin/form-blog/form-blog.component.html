@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" >
+                <div class="card-header card-header-danger">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title">Formulario de Blogs</h5>
+                    </div>                    
+                </div>
+                <div class="card-body">
+                    <form #formBlog="ngForm" (ngSubmit)="onSaveForm(formBlog)">
+                        <div class="form-row mb-4">
+                            <div class="col-6">
+                                <!-- Titulo -->
+                                <input type="hidden" name="idblog" id="idblog" [(ngModel)]="form.idblog">
+                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Titulo" [(ngModel)]="form.nombre">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" name="fecha" id="fecha" class="form-control" placeholder="Fecha" [(ngModel)]="form.fecha">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" name="video" id="video" class="form-control" placeholder="Enlace de Video" [(ngModel)]="form.video">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                            </div>
+                            <div class="col-6">
+                                <textarea class="form-control" name="descripcion" id="descripcion" rows="3" placeholder="Parrafo" [(ngModel)]="form.descripcion"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <textarea class="form-control" name="descripcion2" id="descripcion2" rows="3" placeholder="Parrafo" [(ngModel)]="form.descripcion2"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleFormControlFile1">Imagen De Encabezado</label>
+                                <input type="file" class="form-control-file" id="imgEncabezado" name="imgEncabezado"   (change)="selectFile($event)">
+                            </div>  
+                            <div class="col-6">
+                            </div>  
+                            <div class="col-6">
+                                <textarea class="form-control" name="tittleSeo" id="tittleSeo" rows="3" placeholder="Titulo SEO" [(ngModel)]="form.tittleSeo"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <textarea class="form-control" name="descripcionSeo" id="descripcionSeo" rows="3" placeholder="Descripcion SEO" [(ngModel)]="form.descripcionSeo"></textarea>
+                            </div>                             
+                        </div>
+
+                        <!-- Send button -->
+                        <button class="btn btn-success btn-block" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

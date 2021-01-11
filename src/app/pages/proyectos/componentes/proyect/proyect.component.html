@@ -1,0 +1,74 @@
+<app-menu></app-menu>
+<div class="row container2">
+    <div class="col-12 col-md-12 noPadding">
+        <img [src]="trabajos[0].imgEncabezado" class="img-fluid" data-aos="fade-up">
+    </div>
+</div>
+
+<div class="container">
+    <app-scroll-top></app-scroll-top> 
+
+    <div class="row mt-5 mb-5">
+        <div class="col-10">
+            <h1 class=''>{{trabajos[0].nombre}}</h1>
+            <!-- <p class="text-secondary"><strong>{{trabajos[0].fecha}}</strong></p> -->
+        </div>
+        <div class="col-2 text-right">
+            <img *ngIf="trabajos[0].imgEmpresa"  [src]="trabajos[0].imgEmpresa" class="p-2 img-fluid p-2">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" data-aos="fade-down">
+            <p>{{trabajos[0].parrafo1}}</p>
+            <p>{{trabajos[0].parrafo2}}</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <img [src]="trabajos[0].img" class="img-fluid p-2" data-aos="fade-up">
+        </div>
+    </div>
+    
+      <div class="embed-responsive embed-responsive-21by9 " data-aos="fade-up">
+        <iframe class="embed-responsive-item"   [src]="urlVideo" allowfullscreen></iframe>
+      </div>
+               
+      <!-- <div class="row" *ngIf="trabajos[0].premios">
+          <div class="col-12 text-center mb-4" data-aos="fade-down">
+              <h1>Premios</h1>
+          </div>
+      </div> -->
+      <!-- <div class="row">
+        <ng-container *ngFor="let premio of trabajos">
+            <div class="col-12 col-md-6 text-center mb-2 pl-4 pr-4" *ngFor="let cat of premio.premios">
+                <h3>{{cat.nombre}}</h3>              
+                <div class="row">
+                    <div class="col-3" *ngFor="let info of cat.categorias">
+                        <img [src]="info.img" class="img-fluid p-2" data-aos="fade-up">
+                        <p [ngStyle]="{'color': info.color}"><b>{{info.titulo}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>  
+      </div> -->
+      <!-- <div class="row" *ngIf="trabajos[0].premios">
+          <div class="col-12 text-center mb-5 mt-3">
+            <div class="containerText">
+                <a href="#" class="text">VER TODOS</a>
+            </div>
+          </div>
+      </div>  -->
+    <div class="row">
+        <div class="col-12 text-center mb-5 mt-3" >
+            <span class="containerText hvr-float">
+                <a href="#/trabajos"  style="color: black !important;" class="text">VER TODOS</a>
+                <br>
+                <span class="text-center raya">__________</span>
+            </span>
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>

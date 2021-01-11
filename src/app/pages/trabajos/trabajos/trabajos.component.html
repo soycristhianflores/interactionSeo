@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+  <div class="loading" *ngIf="loading">
+  </div>
+<div class="container" style="margin-top:7.500em;">
+    <app-scroll-top></app-scroll-top>
+    <div class="row">
+        <div class="col-12 text-center" data-aos="fade-down">
+            <h1 class="">Proyectos</h1> 
+        </div>
+        <div class="col-12 col-md-4 col-xl-4 mb-4 mt-2" *ngFor="let trabajo of trabajos" [routerLink]="['../proyect',trabajo.idTrabajo]">
+            <img [src]="trabajo.imgEncabezado" class="img-fluid" data-aos="fade-down" data-aos-delay="600" >
+            <h4 class="mt-2" style="font-size:1.35rem;">{{trabajo.nombre}}</h4>
+            <p class="text-secondary"><strong>{{trabajo.empresa}}</strong></p>    
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+

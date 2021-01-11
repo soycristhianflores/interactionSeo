@@ -1,0 +1,47 @@
+.infoCarreras p{
+    line-height: 2;
+}
+.carrerasForm h4{
+    color: #222E3B; 
+    font-family: gotham-medium;
+}
+::placeholder{
+    color: #222E3B !important;
+    padding-right: 20px !important;
+} 
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .7rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #222E3B !important;
+    background-color: transparent !important;
+    background-clip: padding-box;
+    border-bottom: 1px solid #707B80 !important;
+    border-radius: 0 !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control2{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .7rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #222E3B !important;
+    background-color: transparent !important;
+    background-clip: padding-box;
+    border: 1px solid #707B80 !important; 
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-custom {
+    color: #fff;
+    background-color: #2788BF;
+    border-color: #2788BF;
+    padding: 10px 30px;
+}

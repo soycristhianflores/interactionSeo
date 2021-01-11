@@ -1,0 +1,48 @@
+<div class="loading" *ngIf="loading">
+    <!-- <img src="../../../../assets/img/loader.gif" alt=""> -->
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="card">
+                  <div class="card">
+                      <div class="card-header card-header-danger">
+                          <div class="d-flex justify-content-between">
+                              <h5 class="card-title">Carreras</h5>
+                          <a type="button" class="btn btn-secondary" routerLink="/formTrabajo">Agregar</a>    
+                          </div>
+                          
+                      </div>
+                      <div class="card-body">
+                          <div class="table responsive p-4 m-4">
+                              <table class="table">
+                                  <thead>
+                                    <tr>
+                                      
+                                      <th scope="col">#</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Correo</th>
+                                      <th scope="col">Archivo</th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let job of carreras; let i = index ">
+                                      
+                                      <th>{{i+1}}</th>
+                                      <td>{{job.nombre}}</td>
+                                      <td>{{job.email}}</td>
+                                      <td> <a href="{{job.adjunto}}">  Descargar </a></td>
+                                      
+                                                                  
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  

@@ -1,0 +1,104 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" >
+                <div class="card-header card-header-danger">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title">Formulario de Trabajos</h5>
+                    </div>                    
+                </div>
+                <div class="card-body">
+                    <form (ngSubmit)="onSubmit()" [formGroup]="formGroup">
+                        <div class="form-row mb-4">
+                            <div class="col-6">
+                                <!-- Titulo -->
+                                <input type="text" id="nombre" formControlName="nombre" class="form-control" placeholder="Titulo">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" id="empresa" formControlName="empresa" class="form-control" placeholder="Empresa">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" id="fecha" formControlName="fecha" class="form-control" placeholder="Fecha">
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" id="video" formControlName="video" class="form-control" placeholder="Enlace de Video">
+                            </div>
+                            <div class="col-6">
+                                <textarea class="form-control" id="parrafo1" formControlName="parrafo1" rows="3" placeholder="Parrafo"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <textarea class="form-control" id="parrafo2" formControlName="parrafo2" rows="3" placeholder="Parrafo"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <!--  -->
+                                <input type="text" id="tittleSeo" formControlName="tittleSeo" class="form-control" placeholder="Titulo SEO">
+                            </div>
+                              <div class="col-6">
+                                <textarea class="form-control" id="descripcionSeo" formControlName="descripcionSeo" rows="3" placeholder="Descripcion SEO"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleFormControlFile1">Imagen De Encabezado</label>
+                                <input type="file" class="form-control-file" id="imgEncabezado1" (change)="selectFile($event)"> 
+                              </div>
+                              <div class="col-6">
+                                <label for="exampleFormControlFile1">Imagen Principal</label>
+                                <input type="file" class="form-control-file" id="img" (change)="selectFileImg($event)">
+                              </div>
+                              <div class="col-6">
+                                <label for="exampleFormControlFile1">Logo Empresa</label>
+                                <input type="file" class="form-control-file" id="imgEmpresa" (change)="selectFileLogo($event)">
+                              </div>
+                              <div class="col-12">
+                                    <h3 class="text-center">Seccion de Premios</h3>
+                                    <button  type="button" class="btn btn-primary btn-sm" (click)="addSkill()">Agregar Categoria</button>
+                              </div>                                                                                      
+                        </div>
+                        <div *ngFor="let cat of categoria.controls">
+                            <ng-container [formGroup]='cat'>
+                                <div class="form-row mb-4">
+                                    <div class="col-6">
+                                        <input type="text" formControlName="categorias" class="form-control" placeholder="Categoria">
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-info btn-sm" (click)="addPremio()">Agregar Premio</button>
+                                    </div>
+                                </div>
+                                
+                                      <div *ngFor="let control of premios.controls">
+                                          <ng-container [formGroup]='control'>
+                                            <div class="form-row mb-4">
+                                                <div class="col-6">
+                                                    <label for="titulo">Nombre</label>
+                                                    <input type="text" formControlName="titulo" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="tipo">Tipo Premios</label>
+                                                    <select class="form-control" formControlName="tipo">
+                                                    <option value="Oro">Oro</option>
+                                                    <option value="Plata">Plata</option>
+                                                    <option value="Bronce">Bronce</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="exampleFormControlFile1">Imagen</label>
+                                                    <input type="file" class="form-control-file" formControlName="img" (change)="selectFilePremio($event)">
+                                                </div>
+                                               
+                                            </div>
+                                          </ng-container>
+                                      </div>
+                                   
+                            </ng-container>                           
+                        </div>
+
+                        <!-- Send button -->
+                        <button class="btn btn-success btn-block" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,141 @@
+.container {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  max-width: 100% !important;
+}
+
+.container2 {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  max-width: 94% !important;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: #222E3B;
+  font-family: gotham-medium;
+}
+
+.footerlink:hover {
+  color: #2788BF;
+}
+
+.footerSection {
+  background-color: #CDD1D4;
+}
+
+.footermenu ul {
+  list-style: none;
+}
+
+.footermenu ul li {
+  color: #222E3B;
+  font-family: gotham-medium;
+  padding-bottom: .5rem;
+  font-size: 1.25rem;
+}
+.w-75{
+  width: 75%;
+}
+.noMarginb{
+  margin-bottom: 0 !important;
+}
+.footerinfo h5 {
+  color: #222E3B !important;
+  font-family: gotham-medium;
+  padding-bottom: 1.5rem;
+}
+
+.footerinfo #pais {
+  color: #222E3B;
+  font-family: gotham-medium;
+  font-size: 12px;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.footerinfo p {
+  color: #222E3B;
+  font-family: gotham-book;
+  font-size: 12px;
+}
+
+.footerform h5 {
+  color: #222E3B;
+  font-family: gotham-medium;
+  padding-bottom: 1.5rem;
+}
+
+::placeholder {
+  color: #222E3B !important;
+  padding-right: 20px !important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: .7rem !important;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222E3B !important;
+  background-color: transparent !important;
+  background-clip: padding-box;
+  border-bottom: 1px solid #707B80 !important;
+  border-radius: 0 !important;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control2 {
+  display: block;
+  width: 100%;
+  height: calc(3em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: .7rem !important;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222E3B !important;
+  background-color: transparent !important;
+  background-clip: padding-box;
+  border: 1px solid #707B80 !important;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.footercopyright p {
+  color: #222E3B;
+  font-family: gotham-medium;
+  font-size: .7em;
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: #2788BF;
+  border-color: #2788BF;
+  padding: 5px 20px;
+}
+.w-10{
+  width: 8%;
+  padding-left: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .w-10{
+    width: 9%;
+    padding-left: 15px;
+  }
+  .pt-m-5{
+    padding-top: 3rem;
+  }
+  .menumobileFooter {
+    padding-left: 0 !important;
+  }
+
+  .menumobileFooter li a {
+    color: #222E3B !important;
+  }
+}
+
+.text-color{
+  color: #222E3B !important;
+}

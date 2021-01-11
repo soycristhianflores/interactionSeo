@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+
+
+<section id="sectionBlog" class="container pt-5">
+    <app-scroll-top></app-scroll-top>
+    <div *ngFor="let blog of blogs | slice:0:3" class="gridblog row mt-5" style="background-image: url({{blog.imgEncabezado}});">
+        <div class="shadowBox">
+            <h3>{{blog.nombre}}</h3>
+            <p class="pt-4">{{blog.descripcion}}</p>
+            <a [routerLink]="['../blog',blog.idblog]">Leer más</a>
+        </div>
+    </div>  
+
+    <ng-container *ngIf="showMore">
+        <div *ngFor="let blog of blogs; let ndx = index">
+            <div *ngIf="ndx >= 3" class="gridblog row mt-5" style="background-image: url({{blog.imgEncabezado}});">
+                <div class="shadowBox">
+                    <h3>{{blog.nombre}}</h3>
+                    <p class="pt-4">{{blog.descripcion}}</p>
+                    <a [routerLink]="['../blog',blog.idblog]">Leer más</a>
+                </div>
+            </div> 
+        </div> 
+     </ng-container>
+
+     <div class="col-12 text-center mb-5 mt-5">
+        <div class="containerText">
+            <a (click)="showMore = true" class="text">VER MÁS</a>
+        </div>
+      </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,0 +1,51 @@
+<app-menu></app-menu>
+
+<section id="sectionCarreras" class="container mt-5 pt-5 mb-5">
+  <app-scroll-top></app-scroll-top>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-center pb-4">
+          <h1>Carreras</h1>
+        </div>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 infoCarreras">
+            <p>Aplicá en la agencia independiente más premiada y efectiva de Centroamérica, buscamos personas con ganas de hacer buena publicidad, de explotar todo su potencial y de crecer con nosotros.</p>
+            <p>Nuestra pilares: </p>
+            <p>Son hábitos que practicamos constantemente y expresamos a través de nuestras acciones comerciales y de comunicación. </p>
+            <ul>
+              <li>We work hard</li>
+              <li>We always can</li>
+              <li>We think bigger</li>
+              <li>We seize the day</li>
+              <li>We advise brands</li>
+              <li>We unfold careers</li>
+              <li>We create the future</li>
+              <li>We challenge our best</li>
+            </ul>
+
+            <p>Aplicá en el formulario.</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="carrerasForm">
+                <h4>Adjuntanos tu carpeta</h4>
+                <form #carreraForm="ngForm" (ngSubmit)="onSaveCarrera(carreraForm)">
+                  <div class="form-group">
+                    <input style="border-bottom:none !important" type="text" class="form-control" id="Nombre" placeholder="Nombre" #name="ngModel" [(ngModel)]="carrera.nombre" [ngModelOptions]="{standalone: true}">
+                  </div>
+                  <div class="form-group">
+                    <input style="border-bottom:none !important" type="text" class="form-control" id="Email" placeholder="Email" #name="ngModel" [(ngModel)]="carrera.email" [ngModelOptions]="{standalone: true}">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comentario</label>
+                    <textarea class="form-control2" id="Comentario" rows="3" #name="ngModel" [(ngModel)]="carrera.comentario" [ngModelOptions]="{standalone: true}"></textarea>
+                  </div>
+                  <div class="">
+                    <label for="files">Adjunte archivos:</label>
+                    <input name="galeria" type="file" (change)="selectFile($event)" multiple>
+                  </div>
+                  <button type="submit" class="btn btn-custom">Enviar</button>
+                </form>
+              </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

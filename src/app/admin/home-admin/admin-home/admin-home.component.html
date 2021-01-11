@@ -1,0 +1,103 @@
+<div class="loading" *ngIf="loading">
+    <!-- <img src="../../../../assets/img/loader.gif" alt=""> -->
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="card">
+                  <div class="card">
+                      <div class="card-header card-header-danger">
+                          <div class="d-flex justify-content-between">
+                              <h5 class="card-title">Slider Home Horizontal</h5>
+                          <a type="button" class="btn btn-secondary" routerLink="#/formHomeHorizontal">Agregar</a>    
+                          </div>
+                          
+                      </div>
+                      <div class="card-body">
+                          <div class="table responsive p-4 m-4">
+                              <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Texto principal</th>
+                                      <th scope="col">Texto secundario</th>
+                                      <th scope="col">Imagen Encabezado</th>
+                                      <th scope="col">Enlace</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let homeH of homesH; let i = index ">
+                                      <th>#</th>
+                                      <th>{{homeH.nombre}}</th>
+                                      <td>{{homeH.texto1}}</td>
+                                      <td>{{homeH.texto1_2}}</td>
+                                      <td>
+                                        <a href="{{homeH.imagen}}" target="_blank">Imagen Encabezado</a>
+                                      </td>
+                                      <td>
+                                        <a href="{{homeH.enlace1}}" target="_blank">Enlace</a>
+                                      </td>                                
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+  <div class="loading" *ngIf="loading">
+    <!-- <img src="../../../../assets/img/loader.gif" alt=""> -->
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="card">
+                  <div class="card">
+                      <div class="card-header card-header-danger">
+                          <div class="d-flex justify-content-between">
+                              <h5 class="card-title">Slider Home Vertical</h5>
+                          <a type="button" class="btn btn-secondary" routerLink="#/formHomeVertical">Agregar</a>    
+                          </div>
+                          
+                      </div>
+                      <div class="card-body">
+                          <div class="table responsive p-4 m-4">
+                              <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Texto principal</th>
+                                      <th scope="col">Texto secundario</th>
+                                      <th scope="col">Imagen Encabezado</th>
+                                      <th scope="col">Enlace</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let homeV of homesV; let i = index ">
+                                      <th>#</th>
+                                      <th>{{homeV.nombre}}</th>
+                                      <td>{{homeV.texto1}}</td>
+                                      <td>{{homeV.texto1_2}}</td>
+                                      <td>
+                                        <a href="{{homeV.imagen}}" target="_blank">Imagen Encabezado</a>
+                                      </td>
+                                      <td>
+                                        <a href="{{homeV.enlace1}}" target="_blank">Enlace</a>
+                                      </td>                                
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  

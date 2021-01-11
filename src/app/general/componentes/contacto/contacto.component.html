@@ -1,0 +1,27 @@
+<form class="w-75" #contactoForm="ngForm" (ngSubmit)="onSaveContacto(contactoForm)" name="myForm">
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="Nombre" name="nombre" placeholder="Nombre" 
+        [(ngModel)]="contacto.nombre" required>
+
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="Email" name="correo" placeholder="Email"
+      [(ngModel)]="contacto.correo" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="Empresa" name="empresa"  placeholder="Empresa"
+      [(ngModel)]="contacto.empresa" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="Asunto" name="asunto" placeholder="Asunto"
+      [(ngModel)]="contacto.asunto" required>
+    </div>
+    <div class="form-group">
+      <label class="label" for="exampleFormControlTextarea1">Comentario</label>
+      <textarea class="form-control" id="Comentario" name="consulta" rows="3"
+      [(ngModel)]="contacto.consulta" required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-custom">Enviar</button>
+  </form>

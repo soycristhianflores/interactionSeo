@@ -1,0 +1,63 @@
+
+.color:hover{
+    color: #2788BF;
+}
+
+.color{
+    color: #2788BF;
+    text-decoration: none !important; 
+}
+
+a{
+    color:#212529;
+    text-decoration: none !important; 
+}
+
+.planning{
+    content:url("../../../../assets/img/servazul/planning.png");
+    max-width: 100%;
+    height: auto;
+}
+
+.branding{
+    content:url("../../../../assets/img/servazul/branding.png");
+    max-width: 100%;
+    height: auto;
+
+}
+
+.estrategia{
+    content:url("../../../../assets/img/servazul/estrategia360.png");
+    max-width: 100%;
+    height: auto;
+}
+
+.digital{
+    content:url("../../../../assets/img/servazul/estrategiaDigital.png");
+    max-width: 100%;
+    height: auto;
+}
+
+.web{
+    content:url("../../../../assets/img/servazul/web.png");
+    max-width: 100%;
+    height: auto;
+}
+
+.paid{
+    content:url("../../../../assets/img/servazul/paidmedia.png");
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .ocultar{
+    display:none;
+    }
+}
+
+@media screen and (min-width: 699px) {
+    .ocultarMovil{
+    display:none;
+    }
+}

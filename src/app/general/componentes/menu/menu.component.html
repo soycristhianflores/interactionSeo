@@ -1,0 +1,31 @@
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top fixedHomeMovil" [ngClass]="getInheret()">
+    <a class="navbar-brand" href="#/home">
+      <img [ngClass]="getHeaderLogo()"  src="../../../../assets/img/logo.png" alt="">
+    </a>
+
+    <div id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a [ngClass]="getColor()" class="nav-link"  href="#/trabajos">Our Work</a>
+        </li>
+        <li class="nav-item">
+          <a [ngClass]="getColor()" class="nav-link" href="#/servicios/planning">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a [ngClass]="getColor()" class="nav-link" href="#/agencia">Agencia</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a [ngClass]="getColor()" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Contacto
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <app-contacto></app-contacto>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</div>
